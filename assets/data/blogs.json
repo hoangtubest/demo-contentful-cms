@@ -1,0 +1,227 @@
+{
+  "contents": [
+    {
+      "id": "notes",
+      "createdAt": "2023-09-28T09:36:03.132Z",
+      "updatedAt": "2023-09-29T15:57:06.439Z",
+      "publishedAt": "2023-09-28T09:36:03.132Z",
+      "revisedAt": "2023-09-28T09:39:29.039Z",
+      "title": "Upload images to Notes page",
+      "content": "<h2 id=\"hfcbda227fe\">API Screen</h2><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/fe75bbebaf914848981ae0f47eeec58a/api_1.png\" alt=\"\" width=\"1857\" height=\"686\"><figcaption>API Screen</figcaption></figure><h3 id=\"h4ab793adab\">Blog Screen</h3><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/2086e8c137db462f9d4fe5bfc41c023a/blog_1.png\" alt=\"\" width=\"1859\" height=\"880\"><figcaption>Blog_Screen_1</figcaption></figure><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/1e902c3c268444d3afbfbe8919f727da/blog_2.png\" alt=\"\" width=\"799\" height=\"542\"><figcaption>Blog_Screen_2</figcaption></figure><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/687121ed804445c1b9bed3c8a54d9324/blog_3.png\" alt=\"\" width=\"1851\" height=\"960\"><figcaption>Blog_Screen_3</figcaption></figure><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/87a8d0d6bc644a9db36a476ebbdbf76b/blog_4.png\" alt=\"\" width=\"1870\" height=\"767\"><figcaption>Blog_Screen_4</figcaption></figure><h3 id=\"h584e0700a6\">Category Screen</h3><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/0e989330edc24628932950af151b4dbb/category_1.png\" alt=\"\" width=\"1918\" height=\"659\"><figcaption>Category_Screen_1</figcaption></figure><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/39a3629971944981962784cb52b1575d/category_2.png\" alt=\"\" width=\"797\" height=\"563\"><figcaption>Category_Screen_2</figcaption></figure><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/0b0ea8bce736465485879671166e17d3/category_3.png\" alt=\"\" width=\"1164\" height=\"617\"><figcaption>Category_Screen_3</figcaption></figure><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/d55233320e0e4b918bb6e2712927491d/category_4.png\" alt=\"\" width=\"1872\" height=\"567\"><figcaption>Category_Screen_4</figcaption></figure><h3 id=\"h8d403aeb43\">Images Upload Screen</h3><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/641d623438db4919a469f00f169ede08/images_1.png\" alt=\"\" width=\"1850\" height=\"959\"><figcaption>Images_Upload_Screen_1</figcaption></figure><h3 id=\"h1749895d90\">News Screen</h3><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/6030f877eb19401e816acb62b2cbe313/news_1.png\" alt=\"\" width=\"1919\" height=\"961\"><figcaption>News_Screen_1</figcaption></figure><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/a4003aa5e2b7486c801d849a580895ca/news_2.png\" alt=\"\" width=\"1866\" height=\"964\"><figcaption>News_Screen_2</figcaption></figure><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/df355059a0e34c8d84f5790752762481/news_3.png\" alt=\"\" width=\"798\" height=\"400\"><figcaption>News_Screen_3</figcaption></figure><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/cd6c52ad3909407088fc917ecb75c3d1/news_4.png\" alt=\"\" width=\"704\" height=\"964\"><figcaption>News_Screen_4</figcaption></figure><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/a03867d8f9f9400f909f7813ba2b3aa0/news_5.png\" alt=\"\" width=\"1867\" height=\"964\"><figcaption>News_Screen_5</figcaption></figure>",
+      "eyecatch": {
+        "url": "https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/a582925e9bfd48b989d76412185d86af/img_02.png",
+        "height": 630,
+        "width": 1200
+      },
+      "category": {
+        "id": "information",
+        "createdAt": "2023-09-27T09:21:53.145Z",
+        "updatedAt": "2023-09-29T06:44:35.680Z",
+        "publishedAt": "2023-09-27T09:21:53.145Z",
+        "revisedAt": "2023-09-27T09:21:53.145Z",
+        "name": "Update Information"
+      }
+    },
+    {
+      "id": "first-post",
+      "createdAt": "2023-09-27T09:21:54.646Z",
+      "updatedAt": "2023-09-29T15:57:58.739Z",
+      "publishedAt": "2023-09-27T09:21:54.646Z",
+      "revisedAt": "2023-09-29T09:58:13.151Z",
+      "title": "First, open this article",
+      "content": "<h2 id=\"h2cec5766ea\">Created from a blog template🎉</h2><p>An API was created with the blog template.<br>Excellent job! 🎉</p><h2 id=\"h72c53f91f1\">Try Preview API🚀</h2><p>Let&apos;s try Preview API first.</p><p>The content you submitted will be retrieved with an API and connected to the View.<br>The Preview API allows you to see the actual API response and accelerate your development.</p><p>👇Click here first.</p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/77418c872a6f4985affb636267f48ca0/blog-template-description1.png\" alt=\"\" width=\"2490\" height=\"1652\"></figure><p>When the Preview API page opens, click <strong> Get </strong>button to try out the request.</p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/2e85036189e345c1890a6c45037ebea3/blog-template-description2.png\" alt=\"\" width=\"2492\" height=\"1648\"></figure><p>You can see that the contents of this article can be retrieved via the API.</p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/a45b41fa50bb4c5b938daf5da7eef2a0/blog-template-description3.png\" alt=\"\" width=\"1592\" height=\"1246\"></figure><h3 id=\"h35257771a7\">What to do next? 🏃</h3><p>Build your own website using the responses you see in the Preview API.<br>microCMS retrieves content via API, so you can build screens in your favorite language and framework.</p><ul><li><a href=\"https://document.microcms.io/tutorial/javascript/javascript-top\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"><u>JavaScript SDK</u></a></li><li><a href=\"https://document.microcms.io/tutorial/nuxt/nuxt-top\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"><u>Nuxt SDK</u></a></li><li><a href=\"https://document.microcms.io/tutorial/gatsby/gatsby-top\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"><u>Gatsby SDK</u></a></li></ul><p>Additionally, <a href=\"https://microcms.io/features/sdk\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"><u>server-side SDKs (PHP / Go / Ruby) and mobile SDKs (iOS / Android)</u></a> are also available.</p><p>Please feel free to reach out to us if you have any problems or questions.<br>Support: <a href=\"mailto:support@microcms.io\">support@microcms.io</a><br>Frequently Asked Questions: <a href=\"https://help.microcms.io/ja/knowledge\"><u>https://help.microcms.io/ja/knowledge</u></a></p>",
+      "eyecatch": {
+        "url": "https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/308b8c60dcd14e7a81ffd5e91cbea82d/blog-template-en.png",
+        "height": 630,
+        "width": 1200
+      },
+      "category": {
+        "id": "tutorials",
+        "createdAt": "2023-09-27T09:21:52.914Z",
+        "updatedAt": "2023-09-29T06:44:45.309Z",
+        "publishedAt": "2023-09-27T09:21:52.914Z",
+        "revisedAt": "2023-09-27T09:21:52.914Z",
+        "name": "Tutorials"
+      }
+    },
+    {
+      "id": "ogp-settings",
+      "createdAt": "2023-09-29T03:54:42.175Z",
+      "updatedAt": "2023-09-29T08:33:10.295Z",
+      "publishedAt": "2023-09-29T03:54:42.175Z",
+      "revisedAt": "2023-09-29T08:33:10.295Z",
+      "title": "OGPを実装したい",
+      "content": "<h2 style=\"text-align: start\" id=\"h3ef2e7f138\"><strong>OGPを有効化するなら本番サーバーはNetlifyで</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">結論、本番サーバーがNetlifyであれば、Netlifyでの設定を行うだけでコード上の設定等は不要です。</p><p style=\"text-align: start\">というのもjQueryでmeta周りの設定を動的に書き換えていて、Googleの検索エンジンであればURLを読み込むときにJavaScriptを実行するので、書き換えられたほうの内容で読み込んでくれるのですが、OGPを表示してほしいSNSなどはどうやらJavaScriptを実行してくれないらしいのです。</p><p style=\"text-align: start\">そのためjQueryでOGPを書き換えても正しい情報を表示してくれないとかなんとか・・・（ハマりました・・）</p><p style=\"text-align: start\">他のサーバはわからないのですが、NetlifyであればNetlifyでの設定で解決できることがわかったのでその内容を紹介したいと思います。</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"he561ef1e7c\"><strong>Prerenderingを有効にする</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">この設定を行うには、一度Netlifyでプロジェクトを公開している必要があります。</p><p style=\"text-align: start\">Netlifyにアクセスしたら「Site configuration &gt; Build &amp; deploy &gt; Prerendering」と進みます。</p><p style=\"text-align: start\"></p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/ddd36455fd3f4ce4b1d2fde04298b962/CleanShot%202023-07-12%20at%2000.49.13%402x.png\" alt=\"\" width=\"2918\" height=\"1014\"></figure><p>Configureから「Enable prerendering with Netlify」にチェックを入れて保存するだけです。</p><p></p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/dc5f0c140725420bbb0d6f8578c6e27a/CleanShot%202023-07-12%20at%2000.50.18%402x.png\" alt=\"\" width=\"1708\" height=\"568\"></figure><p>OGP自体はすでに実装されているので、microCMSのサイト設定のメタ情報を更新するだけでOKです。<br>お知らせやコラムなどの投稿ページは見出しを拾って自動的に書き換えるので、特にHTMLで何かタグを挿入することもありません。</p><p></p><h2 style=\"text-align: start\" id=\"h9dff9662c1\"><strong>その他のサーバーでのOGP実装</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">VercelであればNetlifyと似たような機能があるかもしれません。調べてみてください。<br>その他となると、jQueryでの実装は諦めて直接HTMLに書き込む感じになるのではと思っています。。</p>",
+      "eyecatch": {
+        "url": "https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/4991a79f4e2c4aa3a5c9b532e1a6f48d/img_14.png",
+        "height": 630,
+        "width": 1200
+      },
+      "category": {
+        "id": "tutorials",
+        "createdAt": "2023-09-27T09:21:52.914Z",
+        "updatedAt": "2023-09-29T06:44:45.309Z",
+        "publishedAt": "2023-09-27T09:21:52.914Z",
+        "revisedAt": "2023-09-27T09:21:52.914Z",
+        "name": "Tutorials"
+      }
+    },
+    {
+      "id": "use-swiper",
+      "createdAt": "2023-09-29T03:53:05.958Z",
+      "updatedAt": "2023-09-29T08:33:21.942Z",
+      "publishedAt": "2023-09-29T03:53:05.958Z",
+      "revisedAt": "2023-09-29T08:33:21.942Z",
+      "title": "Swiperを使いたい",
+      "content": "<p>KANTAN! CMS STARTERはSwiperがデフォルトで入っているので、HTMLを書いてJSで簡単なセットアップをするだけでスライドショーができます。</p><p></p><h2 style=\"text-align: start\" id=\"h19ff5c176d\"><strong>HTMLを挿入</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">まずはスライドショーを入れたいところに以下のHTMLを貼り付けます。</p><p style=\"text-align: start\">コンテンツ部分の<code>swiper-slide</code>の数だけスライドします。<br>また、画像以外にテキストなどもスライド可能です。</p><p style=\"text-align: start\">前へ / 次へのボタンや、ドットナビゲーション、スクロールバーなどは不要であれば削除してください。</p><p style=\"text-align: start\">1行目のmySwiperTestの部分がSwiperを動かすためのclassになります。<br>同じページにスライドショーを複数挿入する場合はmySwiperTestの部分が被らないようにしてください。<br>Swiperで使うclass名に数値は使えないのでアルファベットのみのclass名にします。<br>例：mySwiperTest、mySwiperFirstなど</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"he0bc92f1ea\"><strong>JSファイルでSwiperを初期化</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">ページ固有のJSファイル（aboutページならabout-index.jsなど）に以下のコードを追記します。</p><p>HTMLで指定した<code>mySwiperTest</code>classが指定されていますが、実際にHTMLに指定したclassを入れてください。<br>effectなどの設定は<a href=\"https://swiperjs.com/swiper-api\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"><u>Swiper 公式ドキュメント</u></a>や他の方の記事が詳しいので、細かい設定をしたい方は検索してみてください。</p><p>JSファイルの作成方法は新しいページの作り方のページで紹介しているので、そちらも見てみてください。</p><p><a href=\"https://hoangtubest.github.io/column/post.html?id=add-new-page\">新しいページの作り方</a></p><p></p><pre><code class=\"language-javascript\">$(function () {\n  // ----------------------------------------------\n  // XXXページ\n  // ----------------------------------------------\n\n  var swiper = new Swiper(&quot;.mySwiperTest&quot;, {\n    effect: &quot;fade&quot;,\n    loop: true,\n    autoplay: {\n      delay: 1000,\n    },\n    speed: 1000,\n    pagination: {\n      el: &quot;.swiper-pagination&quot;,\n    },\n    navigation: {\n      nextEl: &quot;.swiper-button-next&quot;,\n      prevEl: &quot;.swiper-button-prev&quot;,\n    },\n    scrollbar: {\n      el: &quot;.swiper-scrollbar&quot;,\n    },\n  });\n});\n          \n        </code></pre><p style=\"text-align: start\">また、複数のスライドショーがある場合にはその数だけ<code>var swiper</code>の部分を丸ごと複製します。</p><pre><code class=\"language-javascript\">$(function () {\n  // ----------------------------------------------\n  // XXXページ\n  // ----------------------------------------------\n\n  // ひとつめ\n  var swiper = new Swiper(&quot;.mySwiperTest&quot;, {\n    effect: &quot;fade&quot;,\n    loop: true,\n    autoplay: {\n      delay: 1000,\n    },\n    speed: 1000,\n    pagination: {\n      el: &quot;.swiper-pagination&quot;,\n    },\n    navigation: {\n      nextEl: &quot;.swiper-button-next&quot;,\n      prevEl: &quot;.swiper-button-prev&quot;,\n    },\n    scrollbar: {\n      el: &quot;.swiper-scrollbar&quot;,\n    },\n  });\n\n  // ふたつめ\n  var swiper = new Swiper(&quot;.mySwiperFirst&quot;, {\n    effect: &quot;fade&quot;,\n    loop: true,\n    autoplay: {\n      delay: 1000,\n    },\n    speed: 1000,\n    pagination: {\n      el: &quot;.swiper-pagination&quot;,\n    },\n    navigation: {\n      nextEl: &quot;.swiper-button-next&quot;,\n      prevEl: &quot;.swiper-button-prev&quot;,\n    },\n    scrollbar: {\n      el: &quot;.swiper-scrollbar&quot;,\n    },\n  });\n});\n          \n        </code></pre><p style=\"text-align: start\">これでSwiperが動いているはずです。</p>",
+      "eyecatch": {
+        "url": "https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/7e64d12558fd49909feda24b4d298b88/img_09.png",
+        "height": 630,
+        "width": 1200
+      },
+      "category": {
+        "id": "tutorials",
+        "createdAt": "2023-09-27T09:21:52.914Z",
+        "updatedAt": "2023-09-29T06:44:45.309Z",
+        "publishedAt": "2023-09-27T09:21:52.914Z",
+        "revisedAt": "2023-09-27T09:21:52.914Z",
+        "name": "Tutorials"
+      }
+    },
+    {
+      "id": "create-new-pages",
+      "createdAt": "2023-09-29T03:51:44.977Z",
+      "updatedAt": "2023-09-29T03:51:44.977Z",
+      "publishedAt": "2023-09-29T03:51:44.977Z",
+      "revisedAt": "2023-09-29T03:51:44.977Z",
+      "title": "新しいページの作り方",
+      "content": "<p>このサイトにおける新しいページの作り方を紹介します。</p><p></p><h2 style=\"text-align: start\" id=\"ha0e1edf569\"><strong>HTMLファイルを複製する</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">このプロジェクトではテンプレートファイルを用意しています。<br><a href=\"https://beginner.kantan-cms-starter.com/template/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"><u>テンプレートページ</u></a></p><p style=\"text-align: start\">テンプレートファイルは<code>/template/index.html</code>になっており、これを複製してフォルダ名を変えることで新しいページになります。</p><p style=\"text-align: start\">例えば、<code>/about/</code>というページを作りたい場合、templateフォルダごと複製してtemplateをaboutに変更します。</p><p style=\"text-align: start\">/templateのコピー/index.html<br>↓<br>/about/index.html</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"h7bbbea8050\"><strong>CSSファイルを作成する</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">CSSの設計上、使用するパーツを都度headに指定する方法をとっています。<br>そのため新しくページを作成する場合には、対応するCSSファイルも新しく作成すると良いです。</p><p style=\"text-align: start\">例えばaboutページのCSSファイルを追加する場合、<code>/assets/css/pages/about.css</code>を作りheadに挿入します。</p><pre><code class=\"language-html\">&lt;head&gt;\n  &lt;!-- CSS --&gt;\n  &lt;!-- pagesはここに挿入 --&gt;\n  &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/css/pages/about.css&quot;&gt;\n  &lt;!-- / CSS --&gt;\n&lt;/head&gt;\n          \n        </code></pre><p style=\"text-align: start\">また、ボタンやカード型などの既製パーツも使用できます。<br>パーツ一覧から使用したいパーツがあれば記事を参考に追加してみてください。</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"h62d3ea1e55\"><strong>JSファイルを作成する</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">ページ固有のJavaScriptを書きたい場合は新しくファイルを作成する必要があります。</p><p style=\"text-align: start\"><code>/assets/js/</code>に<code>xxx-index.js</code>というファイルを作成します。<br>例えばaboutページならabout-index.jsになります。</p><pre><code class=\"language-javascript\">$(function () {\n  // ----------------------------------------------\n  // aboutページ\n  // ----------------------------------------------\n\n  // ここに処理を追加\n});\n          \n        </code></pre><p style=\"text-align: start\">作成したJSファイルはheadタグのcommon.jsファイルの後に挿入してください。</p><pre><code class=\"language-html\">&lt;head&gt;\n  &lt;!-- js --&gt;\n  &lt;script type=&quot;module&quot; src=&quot;./assets/js/common.js&quot; defer&gt;&lt;/script&gt;\n  &lt;script type=&quot;module&quot; src=&quot;./assets/js/about-index.js&quot; defer&gt;&lt;/script&gt;\n  &lt;!-- / js --&gt;\n&lt;/head&gt;\n          \n        </code></pre><p style=\"text-align: start\">また、全ページ共通のJSは<code>/assets/js/common.js</code>に追記します。</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"h63edc71425\"><strong>コンテンツを作成する</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">ページのベースができたのであとはどんどん作成していってください。<br>titleの変更やヘッダーフッター周りの変更なども忘れずに。</p><p style=\"text-align: start\">グッドラック！</p>",
+      "eyecatch": {
+        "url": "https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/0b4743c8c8be47e984d65cf74bfd8eb1/img_04.png",
+        "height": 630,
+        "width": 1200
+      },
+      "category": {
+        "id": "technology",
+        "createdAt": "2023-09-27T09:21:53.401Z",
+        "updatedAt": "2023-09-29T06:44:24.335Z",
+        "publishedAt": "2023-09-27T09:21:53.401Z",
+        "revisedAt": "2023-09-27T09:21:53.401Z",
+        "name": "Technology"
+      }
+    },
+    {
+      "id": "editor-styles",
+      "createdAt": "2023-09-29T03:50:17.678Z",
+      "updatedAt": "2023-09-29T03:50:17.678Z",
+      "publishedAt": "2023-09-29T03:50:17.678Z",
+      "revisedAt": "2023-09-29T03:50:17.678Z",
+      "title": "リッチエディタのスタイル確認投稿",
+      "content": "<h2 style=\"text-align: start\" id=\"had7ce3f1cb\"><strong>見出し2</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されて</p><p style=\"text-align: start\">複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されて</p><p style=\"text-align: start\"></p><h3 style=\"text-align: start\" id=\"h594976e74f\"><strong>見出し3</strong></h3><p style=\"text-align: start\">複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されて</p><h4 style=\"text-align: start\" id=\"h88e8c523a3\"><strong>見出し4</strong></h4><p style=\"text-align: start\">複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されて</p><h5 style=\"text-align: start\" id=\"h169558c650\"><strong>見出し5</strong></h5><p style=\"text-align: start\">複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されて</p><p style=\"text-align: center\">複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(<a href=\"https://test.com/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"><u>field of definition</u></a>)を持っている。<br>自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されて</p><p style=\"text-align: start\">複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(<code>Rosati involution</code>）をもつ環として既に分類されて</p><p style=\"text-align: start\"></p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/01f661fe102148c090ddf15820b83281/img_top_pc_3.jpg\" alt=\"\" width=\"2048\" height=\"1184\"></figure><p>サンプル画像です</p><table><tbody><tr><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td></tr></tbody></table><table><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center\">ヘッダー</p></th><th colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center\">ヘッダー</p></th><th colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center\">ヘッダー</p></th><th colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center\">ヘッダー</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td></tr></tbody></table><table><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center\">ヘッダー</p></th><th colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center\">ヘッダー</p></th><th colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center\">ヘッダー</p></th><th colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center\">ヘッダー</p></th></tr><tr><th colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center\">ヘッダー</p></th><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル</p></td></tr></tbody></table><pre><code class=\"language-html\">&lt;div class=&quot;slideWrapper&quot;&gt;\n  &lt;ul class=&quot;slideList&quot;&gt;\n    &lt;li class=&quot;slideList__item&quot;&gt;\n      &lt;img src=&quot;/assets/img/img-1.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;200&quot; /&gt;\n    &lt;/li&gt;\n    &lt;li class=&quot;slideList__item&quot;&gt;\n      &lt;img src=&quot;/assets/img/img-2.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;200&quot; /&gt;\n    &lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/div&gt;\n          \n        </code></pre><blockquote><p>複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されて</p><p>複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されて</p></blockquote><p style=\"text-align: start\">複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されて</p><hr><p style=\"text-align: start\">複素数体であれば、任意のCM-タイプの A は、実際、数体である定義体（英語版）(field of definition)を持っている。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosati involution）をもつ環として既に分類されて</p><ul><li>リスト</li><li>リスト</li><li>リスト</li></ul><ol><li>リスト</li><li>リスト</li><li>リスト</li></ol>",
+      "eyecatch": {
+        "url": "https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/12a36a962c8d42c78d3c93a0b75675e6/img_10.png",
+        "height": 630,
+        "width": 1200
+      },
+      "category": {
+        "id": "tutorials",
+        "createdAt": "2023-09-27T09:21:52.914Z",
+        "updatedAt": "2023-09-29T06:44:45.309Z",
+        "publishedAt": "2023-09-27T09:21:52.914Z",
+        "revisedAt": "2023-09-27T09:21:52.914Z",
+        "name": "Tutorials"
+      }
+    },
+    {
+      "id": "setup-preview-mode",
+      "createdAt": "2023-09-29T03:49:07.893Z",
+      "updatedAt": "2023-09-29T09:40:36.069Z",
+      "publishedAt": "2023-09-29T03:49:07.893Z",
+      "revisedAt": "2023-09-29T09:40:36.069Z",
+      "title": "下書きプレビューの設定をしよう",
+      "content": "<p>「画面プレビュー」というmicroCMSの機能を使うと、記事を公開しなくても実際の表示を確認することができます。<br>表示を確認しながら入稿することができるので、設定しておくと便利です。</p><h2 style=\"text-align: start\" id=\"h27a975ab25\"><strong>プレビュー用のリンクを指定する</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">画面プレビュー機能は実装済みなので、microCMSの管理画面からプレビュー用のリンクを指定するだけでOKです。<br>お知らせもコラムも同じ手順なので、ここではお知らせに絞って紹介します。</p><p style=\"text-align: start\">まず、左側のサイドバーから「お知らせ &gt; API設定 &gt; 画面プレビュー」と進みます。</p><p style=\"text-align: start\"></p><p style=\"text-align: start\"></p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/4cb8a47c16174ca996474549f1d3f9eb/CleanShot%202023-07-11%20at%2023.40.50%402x.png\" alt=\"\" width=\"2804\" height=\"1354\"></figure><p>この画面にある遷移先URLのフォームに画面プレビューのURLを設定します。</p><p style=\"text-align: start\">本番サイトのURLがあれば</p><p style=\"text-align: start\"></p><pre><code>https://xxxx.com/news/post.html?id={CONTENT_ID}&amp;draftKey={DRAFT_KEY}\n          \n        </code></pre><p style=\"text-align: start\">ローカル環境のURLも指定できます。<br>※Live Serverを立ち上げた状態でプレビューすることを想定しています。<br>ローカルサーバーを立ち上げた状態によってはポートが5500ではない場合もあるので、ローカル環境のURLを見てポート番号（5500）を適宜変更してください。</p><pre><code>http://127.0.0.1:5500/news/post.html?id={CONTENT_ID}&amp;draftKey={DRAFT_KEY}\n          \n        </code></pre><p style=\"text-align: start\">ドメインのあとのパスはサイトの構成にもよるので、適宜変更してください！</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"h42d65a8cae\"><strong>画面プレビュー機能のファイルについて</strong></h2><p style=\"text-align: start\">お知らせなら<code>/assets/js/modules/get-news-draft.js</code>に、コラムなら<code>/assets/js/modules/get-column-draft.js</code>に処理が載っています。</p><p>変更したいことがあればのぞいてみてください。</p><p><br></p><p style=\"text-align: start\"></p><p style=\"text-align: start\"></p>",
+      "eyecatch": {
+        "url": "https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/30f79f45eaa34cad87bd614c4c9c5d8f/img_17.png",
+        "height": 630,
+        "width": 1200
+      },
+      "category": {
+        "id": "technology",
+        "createdAt": "2023-09-27T09:21:53.401Z",
+        "updatedAt": "2023-09-29T06:44:24.335Z",
+        "publishedAt": "2023-09-27T09:21:53.401Z",
+        "revisedAt": "2023-09-27T09:21:53.401Z",
+        "name": "Technology"
+      }
+    },
+    {
+      "id": "first-action",
+      "createdAt": "2023-09-29T03:47:59.025Z",
+      "updatedAt": "2023-09-29T08:33:34.875Z",
+      "publishedAt": "2023-09-29T03:47:59.025Z",
+      "revisedAt": "2023-09-29T08:33:34.875Z",
+      "title": "開発を始める前に最初にやるとよいこと",
+      "content": "<p>セットアップが終わり、microCMSと連携が終わったらいざ開発！</p><p style=\"text-align: start\">何からやればいいかわからないという方もいるかもしれません。<br>基本的には自由にHTMLを書いていけば良いです。笑</p><p style=\"text-align: start\">ただ、最初にやっておくことで後々の開発が楽になることはあります。<br>参考程度に見ていってもらえればと思います。</p><h2 style=\"text-align: start\" id=\"h45345e154b\"><strong>microCMSのサイト設定を確認する</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">microCMSで作成したサービスにアクセスしましょう。</p><p style=\"text-align: start\">左側のメニューバーの「コンテンツ（API）」に以下の3つが表示されていると思います。</p><ul><li>サイト設定</li><li>コラム</li><li>お知らせ</li></ul><p style=\"text-align: start\">ここがサイト内で設定したり投稿するためのメニューです。</p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/9ca4663a977f4ec29d375dff17467584/CleanShot%202023-07-11%20at%2021.13.26%402x.png\" alt=\"\" width=\"3220\" height=\"1760\"></figure><p style=\"text-align: start\">コラムやお知らせは後からでも大丈夫ですが、サイト設定に関してはサイト全体に関わる内容もあるので開発を始める際に設定しておくのが良いでしょう。</p><p style=\"text-align: start\"></p><h3 style=\"text-align: start\" id=\"h62df2d4436\"><strong>サイト設定</strong></h3><p style=\"text-align: start\"></p><p style=\"text-align: start\">microCMSに初めてアクセスしたら、※マークがついている箇所の入力をしましょう。<br>入力がないままVSCodeでサイトを立ち上げるとコンソールでエラーが出ている状態になります。</p><p style=\"text-align: start\">サイト設定ではサイト全体に挿入するようなmeta情報やscriptなどを管理します。<br>例えばGoogle FontsのlinkタグやGoogle Analytics、Google Tag Managerなどです。</p><p style=\"text-align: start\">headで設定するtitleやdescription、OGP関連の設定はサイト設定の画面から行うことで、HTMLに直接コードを書く必要はありません。<br>※ただし、titleに関してはjQueryの仕様上、ページが表示されてからJSによる上書きが完了するまでに一瞬のラグがあるので、デフォルトでtitleタグにサイト名を書いておくか未入力にしておくと良いと思います。</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"h901f899853\"><strong>ページの整理をする</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">KANTAN! CMS STARTER用のページ、「flow」や「about-functions」はフォルダごと削除してかまいません。<br>使用するページ、使用しないページを確認しながら整理しましょう。</p><p style=\"text-align: start\">後にヘッダー、フッターも整えてわかりにくくなる場合はtemplateページ以外消してしまっても良いかもしれません。<br>自分がわかりやすいようにやってみてください。</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"h7356243c76\"><strong>ヘッダーやフッターを整える</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">全ページ共通のパーツである、ヘッダーとフッターは早めに整えておくことをおすすめします。</p><p style=\"text-align: start\">/template/index.htmlだけを残してヘッダーとフッターを設定してからページを複製すると楽かもしれません。</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"h6b93ad0f6f\"><strong>themeファイルを編集する</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">サイト全体の色などを<code>/assets/css/foundation/theme.css</code>に置いてきました。</p><p style=\"text-align: start\">カラーコードを変更するだけで、この変数に紐づく部分の色が変わります。<br>もしも組み合わせが気に入らないというのがあれば、あえてこの変数を使わず、各CSSファイルに直接カラーコードを指定しても良いです。</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"hcbec2bf0d9\"><strong>終わりに</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">ここまで完了すればあとは好きなようにコーディングしていってください。<br>別の記事でコラムやお知らせの差し込み方や新しいページの作り方などを紹介したいと思います。</p><p><br></p>",
+      "eyecatch": {
+        "url": "https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/217e2b5399fc4cf6b1682e4385c1ccab/img_15.png",
+        "height": 630,
+        "width": 1200
+      },
+      "category": {
+        "id": "tutorials",
+        "createdAt": "2023-09-27T09:21:52.914Z",
+        "updatedAt": "2023-09-29T06:44:45.309Z",
+        "publishedAt": "2023-09-27T09:21:52.914Z",
+        "revisedAt": "2023-09-27T09:21:52.914Z",
+        "name": "Tutorials"
+      }
+    },
+    {
+      "id": "insert-lists",
+      "createdAt": "2023-09-29T03:45:27.247Z",
+      "updatedAt": "2023-09-29T10:08:44.469Z",
+      "publishedAt": "2023-09-29T03:45:27.247Z",
+      "revisedAt": "2023-09-29T10:08:44.469Z",
+      "title": "お知らせやコラム一覧を挿入したい",
+      "content": "<p>こちらで紹介する方法はセクション単位でもページ単位でも有効な方法です。<br>ただし、同じページにコラム一覧を2箇所といったことはできないのでご注意ください。</p><p></p><h2 style=\"text-align: start\" id=\"ha95e8567f4\"><strong>一覧挿入の仕組み</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">まずはどのようにして一覧を挿入しているのか知ることから始めましょう。</p><p style=\"text-align: start\">お知らせもコラムも基本的には同じ処理をしていて挿入する要素が違うくらいなので、ここではお知らせに絞って解説します。</p><p style=\"text-align: start\"></p><h3 style=\"text-align: start\" id=\"haa7ad75257\"><strong>一覧を出力するための処理</strong></h3><p style=\"text-align: start\"></p><p style=\"text-align: start\">一覧を取得する処理は<code>/assets/js/modules/get-news-list.js</code>で管理しています。</p><p style=\"text-align: start\">処理の内容を詳しく説明するには時間と文章量がかかるので簡単に説明すると、</p><ul><li>microCMSからお知らせAPIを呼び出す</li><li>APIをHTMLに整形する</li><li>該当のid属性の要素に整形したHTMLを挿入する</li></ul><p style=\"text-align: start\">といった感じです。</p><p style=\"text-align: start\">これがベースで、サムネイルが指定されてなかったら・・とか、カテゴリを指定したら・・とか、条件に応じて整形するHTMLを変えたり、もっとみるボタンとかページング出すとか、色々なケースを想定して書いているのでコードが長くなっています。</p><p style=\"text-align: start\">で、基本的にはこのファイルだけでお知らせ一覧を表示する処理が完結していて関数化までしているので、差し込みたいページのJavaScriptファイルでこの関数<code>getNewsList()</code>を呼び出すだけです。（※呼び出す際に引数をとるので別途説明します）</p><p style=\"text-align: start\">だけなんですが、ES modulesというJavaScriptの仕組みを利用しているので、関数を呼び出す際に書き方があります。</p><p style=\"text-align: start\"></p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/12a36a962c8d42c78d3c93a0b75675e6/img_10.png\" alt=\"\" width=\"1200\" height=\"630\"></figure><h2 style=\"text-align: start\" id=\"h460439f8d8\"><strong>一覧を出力するための関数</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\"><code>getNewsList()</code>という関数を使用するとお知らせ一覧が取得できるのですが、引数が二つ必要になります。</p><p style=\"text-align: start\">第一引数に、「お知らせ詳細ページまでのパス」を、第二引数に「一覧表示する記事の上限数」を指定します。</p><p style=\"text-align: start\">例えば、TOPページでお知らせ一覧を出力したいとします。<br>お知らせ詳細ページのパスはTOPから見て./news/post.htmlとし、記事の表示数を4件にしたいと思います。</p><p style=\"text-align: start\">これを関数で呼び出す際には以下のように書きます。</p><p style=\"text-align: start\">第一引数のパスを理解するのが少し難しいかもしれません。</p><p style=\"text-align: start\">ただ、このように詳細ページまでの途中のパスだけを指定することで、どこのページに一覧を呼び出しても、処理内容を少しも変更することなく使い回すことができるのです。</p><p style=\"text-align: start\">これはコラム一覧を取得する関数<code>getColumnList()</code>も同様の仕組みになっています。</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"h571802c002\"><strong>ページに挿入するためのscript</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">関数の使い方がわかったところで、もう一息です。<br>実際にTOPページにお知らせ一覧を挿入するとしたらどう書くか。</p><p style=\"text-align: start\">まずはTOPページ固有のJavaScriptファイルがあるかheadタグから確認してください。<br>デフォルトだとcommon.jsの下にindex.jsが指定されていると思います。</p><p style=\"text-align: start\">なければ<code>/assets/js/index.js</code>のファイルを作成して、TOPページ（/index.html）のheadタグ内、common.jsの下に以下のようにscriptを挿入します。<br><code>type=&quot;module&quot;</code>とdefer属性は必ず入れてください。</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"ha214098e44\"><strong>まとめ</strong></h2><p style=\"text-align: start\">長々と書いてしまいましたが、一覧を挿入する場合は以下の手順でOKです。</p><ol><li>ページ固有のjsファイルで一覧取得の関数を呼び出す（<code>getXxxxList()</code>）</li><li>htmlで一覧を表示したい箇所に該当するid属性の要素を指定する</li></ol><p>やっていることが理解できれば簡単に挿入できると思うので、ぜひ理解を深めながらコーディングしてみてください。</p><p><br></p><p style=\"text-align: start\"></p>",
+      "eyecatch": {
+        "url": "https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/084933d78e0f454290af3732ba0d2147/img_16.png",
+        "height": 630,
+        "width": 1200
+      },
+      "category": {
+        "id": "information",
+        "createdAt": "2023-09-27T09:21:53.145Z",
+        "updatedAt": "2023-09-29T06:44:35.680Z",
+        "publishedAt": "2023-09-27T09:21:53.145Z",
+        "revisedAt": "2023-09-27T09:21:53.145Z",
+        "name": "Update Information"
+      }
+    },
+    {
+      "id": "parts-list",
+      "createdAt": "2023-09-28T04:50:22.628Z",
+      "updatedAt": "2023-09-29T08:33:47.168Z",
+      "publishedAt": "2023-09-28T04:50:22.628Z",
+      "revisedAt": "2023-09-29T08:33:47.168Z",
+      "title": "CMS STARTERで使えるパーツ集",
+      "content": "<p>で使用できるパーツをご紹介します。<br>コラムで使用しているパーツと同じものもあれば異なるものもあります。</p><p style=\"text-align: start\">どれもパーツ自体の設計は完了していて、該当するCSSファイルをheadに差し込んでHTMLにclassを充てるだけで整います。</p><h2 style=\"text-align: start\" id=\"hbb29e2ae30\"><strong>共通事項について</strong></h2><p style=\"text-align: start\">パーツを使用する際には先に該当するCSSファイルをheadで指定する必要があります。</p><p style=\"text-align: start\">CSSの設計上パーツごとにCSSファイルを分けており、必要なページで必要なコードだけを指定することでブラウザの表示速度の向上を目指しています。</p><p style=\"text-align: start\"></p><h3 style=\"text-align: start\" id=\"h35fa30c652\"><strong>CSSファイルをheadに挿入する</strong></h3><p style=\"text-align: start\">パーツを使用するには、該当のCSSファイルをheadタグの<code>&lt;!-- CSS --&gt;</code>と<code>&lt;!-- / CSS --&gt;</code>の間に挿入します。</p><p style=\"text-align: start\">既存のHTMLファイルやテンプレートファイルを見るとCSSファイルが大量に指定されていると思います。<br>一応CSSを読み込む順番があり、CSSが格納されているフォルダの順番で指定しています。</p><p style=\"text-align: start\">foundationフォルダ→layoutフォルダ→componentフォルダ→utilityフォルダ→pagesフォルダ</p><p style=\"text-align: start\">基本的にはcomponent系の最後に追加するのが良いですが、迷ったら<code>&lt;!-- / CSS --&gt;</code>の上でも。</p><p style=\"text-align: start\"></p><h3 style=\"text-align: start\" id=\"he56afa19a2\"><strong>パスに注意する</strong></h3><p style=\"text-align: start\"></p><p style=\"text-align: start\">CSSファイルの指定には相対パスを採用しているので階層によってパスの先頭の書き方が異なります。</p><p style=\"text-align: start\">TOPページであれば<code>./assets/css/component/xxx.css</code>になり、第2階層の場合は<code>../assets/css/component/xxx.css</code>、第3階層の場合は<code>../../assets/css/component/xxx.css</code>となります。</p><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"h37fcf3653b\"><strong>吹き出し</strong></h2><p style=\"text-align: start\">以下のようなパーツが使用できます。</p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/68a78f751f424c3fa6338985f877108e/CleanShot%202023-07-01%20at%2023.27.46%402x.png\" alt=\"\" width=\"1190\" height=\"242\"></figure><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"h4e737f7759\"><strong>ボタン</strong></h2><p style=\"text-align: start\">以下のようなパーツが使用できます。</p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/46a4d1347db340bd810fa70f7c435335/CleanShot%202023-07-02%20at%2000.38.07%402x.png\" alt=\"\" width=\"872\" height=\"456\"></figure><p style=\"text-align: start\"></p><h2 style=\"text-align: start\" id=\"hb8afeb3869\"><strong>カード</strong></h2><p style=\"text-align: start\"></p><p style=\"text-align: start\">以下のようなパーツが使用できます。<br>ボーダーの有無のカスタマイズはもちろん、画像やタグがなくても崩れないようになっているのでお好きにカスタマイズして使えます。</p><p style=\"text-align: start\"></p><figure><img src=\"https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/80e9a8ae4472484e9f96ac69586d71a9/CleanShot%202023-07-02%20at%2017.57.25%402x.png\" alt=\"\" width=\"1438\" height=\"726\"></figure><h3 style=\"text-align: start\" id=\"h9bc6c21fa9\"><strong>1. CSSファイルをheadで指定する</strong></h3><p style=\"text-align: start\">headにCSSファイルを指定します。<br>以下の例は子ページ（第二階層）での例です。</p><p style=\"text-align: start\"></p><h3 style=\"text-align: start\" id=\"hcf52b3365c\"><strong>2. HTMLを挿入</strong></h3><p style=\"text-align: start\">以下のHTMLを挿入します。<br>タグや画像などが不要であれば削除し、見出しなどのタグは適宜変更してください。</p><p style=\"text-align: start\">また、<strong>カード型のパーツは全幅になっているため、横幅を制御したい場合はこのHTMLの親要素にリスト（ulなど）やdivなどでラップしてスタイル調整してください。</strong><br>横並びも同様です。</p><p style=\"text-align: start\"></p>",
+      "eyecatch": {
+        "url": "https://images.microcms-assets.io/assets/72edb0453db14fbc9f5be83ba4e14032/2a09de3a5fc345b2848b610e93134ea0/img_05.png",
+        "height": 630,
+        "width": 1200
+      },
+      "category": {
+        "id": "tutorials",
+        "createdAt": "2023-09-27T09:21:52.914Z",
+        "updatedAt": "2023-09-29T06:44:45.309Z",
+        "publishedAt": "2023-09-27T09:21:52.914Z",
+        "revisedAt": "2023-09-27T09:21:52.914Z",
+        "name": "Tutorials"
+      }
+    }
+  ],
+  "totalCount": 14,
+  "offset": 0,
+  "limit": 10
+}

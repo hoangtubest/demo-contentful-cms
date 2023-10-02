@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo MicroCMS - JS</title>
+  <link rel="icon" href="./assets/images/common/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+
+<body>
+  <div id="loading">
+    <div class="dot-spinner">
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+    </div>
+  </div>
+  <div id="wrapper">
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header-logo">
+            <h1><a href="./">DEMO CONTENTFULL-CMS</a></h1>
+          </div>
+          <div class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="./news/" class="header-nav__link">News</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="./column/" class="header-nav__link">Column</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="./column/post.html?id=notes" class="header-nav__link">Notes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="news" class="news">
+        <div class="container">
+          <h2 class="c-headline-lv2 js-effect">お知らせ</h2>
+          <div id="js-getNewsList"></div>
+          <div class="btn">
+            <a href="./news/" class="btn__link">もっとみる</a>
+          </div>
+        </div>
+      </section>
+      <section id="column" class="column">
+        <div class="container">
+          <h2 class="c-headline-lv2 js-effect">お役立ちコラム</h2>
+          <div id="js-getColumnList">
+            <!-- <ol class="c-columnList">
+              <li class="c-columnList__item">
+                <a href="./column/post.html?id=insert-lists" class="c-card">
+                  <div class="c-card__inner">
+                    <div class="c-card__textContents">
+                      <h3 class="c-card__title">お知らせやコラム一覧を挿入したい</h3>
+                      <ul class="c-card__tagList">
+                        <li class="c-card__tag">カスタマイズ</li>
+                      </ul>
+                    </div>
+                    <figure class="c-card__image">
+                      <img src="https://images.microcms-assets.io/assets/3649ca4c219e401883022f9be8faf891/f5a2d7e26a2742339d72a84c20460619/img_16.png" alt="" width="1200" height="630">
+                    </figure>
+                  </div>
+                </a>
+              </li>
+            </ol> -->
+          </div>
+          <div class="btn">
+            <a href="./column/" class="btn__link">もっとみる</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <p><small>&copy;DGWA - HoangLC</small></p>
+    </footer>
+  </div>
+  <script src="./assets/js/common.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

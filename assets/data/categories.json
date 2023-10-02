@@ -1,0 +1,31 @@
+{
+  "contents": [
+    {
+      "id": "technology",
+      "createdAt": "2023-09-27T09:21:53.401Z",
+      "updatedAt": "2023-09-29T06:44:24.335Z",
+      "publishedAt": "2023-09-27T09:21:53.401Z",
+      "revisedAt": "2023-09-27T09:21:53.401Z",
+      "name": "Technology"
+    },
+    {
+      "id": "information",
+      "createdAt": "2023-09-27T09:21:53.145Z",
+      "updatedAt": "2023-09-29T06:44:35.680Z",
+      "publishedAt": "2023-09-27T09:21:53.145Z",
+      "revisedAt": "2023-09-27T09:21:53.145Z",
+      "name": "Update Information"
+    },
+    {
+      "id": "tutorials",
+      "createdAt": "2023-09-27T09:21:52.914Z",
+      "updatedAt": "2023-09-29T06:44:45.309Z",
+      "publishedAt": "2023-09-27T09:21:52.914Z",
+      "revisedAt": "2023-09-27T09:21:52.914Z",
+      "name": "Tutorials"
+    }
+  ],
+  "totalCount": 3,
+  "offset": 0,
+  "limit": 10
+}

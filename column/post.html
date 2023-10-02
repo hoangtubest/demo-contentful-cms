@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Detail | Demo MicroCMS - JS</title>
+  <link rel="icon" href="../assets/images/common/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+
+<body>
+  <div id="loading">
+    <div class="dot-spinner">
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+    </div>
+  </div>
+  <div id="wrapper">
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header-logo">
+            <h1><a href="../">DEMO MICRO-CMS</a></h1>
+          </div>
+          <div class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="../news/" class="header-nav__link">News</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="../column/" class="header-nav__link">Column</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="../column/post.html?id=notes" class="header-nav__link">Notes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="c-childPageTitle">
+        <h2 class="c-childPageTitle__text">お役立ちコラム</h2>
+      </div>
+      <section id="column" class="column">
+        <div class="container">
+          <div class="p-columnPost">
+            <div class="l-row-sidebar">
+              <div class="p-columnPost__body">
+                <article>
+                  <div class="p-columnPostHeader">
+                    <div id="js-postCategory"></div>
+                    <h1 class="p-columnPostTitle" id="js-postTitle"></h1>
+                    <div class="p-columnPostDate">
+                      <p class="c-iconText">
+                        <img class="c-iconText__icon" src="../assets/images/common/icon_pen.svg" alt="投稿日" width="20" height="20">
+                        <span id="js-publishedDate"></span>
+                      </p>
+                      <p class="c-iconText">
+                        <img class="c-iconText__icon" src="../assets/images/common/icon_update.svg" alt="更新日" width="20" height="20">
+                        <span id="js-updatedDate"></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div id="js-postThumbnail"></div>
+                  <div class="c-post">
+                    <div id="js-post"></div>
+                  </div>
+                </article>
+              </div>
+              <aside class="c-sidebar">
+                <h2 class="c-sidebar__title">関連する記事</h2>
+                <div id="js-relatedPostList"></div>
+              </aside>
+            </div>
+          </div>
+          <div class="btn">
+            <a href="./" class="btn__link">Column List</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <p><small>&copy;DGWA - HoangLC</small></p>
+    </footer>
+  </div>
+  <script src="../assets/js/common.js"></script>
+  <script src="../assets/js/post.js"></script>
+</body>
+
+</html>
