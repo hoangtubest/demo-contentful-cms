@@ -1,5 +1,8 @@
 let currentURL = window.location.href;
-// console.log(currentURL);
+console.log(currentURL);
+
+const apiKey = "kFbPZJQqDseWvnvwhMCeyLFztPqiB7CLgV9iknOuIl4";
+const spaceId = "blrbugsds7rq";
 
 let allColumnItems = [];
 let columnOfCategoryItems = [];
@@ -7,6 +10,8 @@ let itemsPerPage = 6;
 let currentPage = 1;
 let previousPage = 1;
 let totalPages = 1;
+let assetImage;
+let allCategoryItems;
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
@@ -109,9 +114,6 @@ function formatDateToCustomFormat(dateString) {
 }
 
 function callApi(contentType, limit = 100, successCallback, errorCallback) {
-  const apiKey = "kFbPZJQqDseWvnvwhMCeyLFztPqiB7CLgV9iknOuIl4";
-  const spaceId = "blrbugsds7rq";
-
   const apiUrl = `https://cdn.contentful.com/spaces/${spaceId}/entries?content_type=${contentType}&limit=${limit}`;
 
   // console.log(apiUrl);
@@ -134,6 +136,28 @@ function callApi(contentType, limit = 100, successCallback, errorCallback) {
     });
 }
 
+function callApiAsset(assetId, successAssetCallback) {
+  const apiUrl = `https://cdn.contentful.com/spaces/${spaceId}/assets/${assetId}`;
+
+  // console.log(apiUrl);
+
+  fetch(apiUrl, {
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+    },
+  })
+    .then((response) => response.json())
+    .then((dataAsset) => {
+      // console.log(dataAsset);
+      assetImage = dataAsset.fields.file;
+      // console.log(assetImage);
+      successAssetCallback(assetImage);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
+
 function handleError(error) {
   console.error("Error JSON:", error);
 }
@@ -152,21 +176,21 @@ function getNewsList(limitNews) {
     activities: (item) => item.fields.news_categories_02,
   };
 
-  function handleSuccess(data) {
+  function handleNewsSuccess(data) {
     // console.log("-----newsDataAll JSON----");
     newsDataAll = [...data];
     // console.log(newsDataAll);
     renderNewsItems(newsDataAll);
   }
 
-  function handleError(error) {
+  function handleNewsError(error) {
     const getColumnList = document.querySelector("#js-getNewsList");
     getColumnList.innerHTML =
       '<p class="u-text-center">まだお知らせがありません。</p>';
     console.error("Error JSON:", error);
   }
 
-  callApi(apiUrl, limit, handleSuccess, handleError);
+  callApi(apiUrl, limit, handleNewsSuccess, handleNewsError);
 
   const tabButtons = document.querySelectorAll(".c-tab__item");
   tabButtons.forEach((tab) => {
@@ -269,15 +293,79 @@ function renderNewsItems(items) {
   getNewsList.appendChild(newsList);
 }
 
+function getCategoryList(limitCategory) {
+  const apiUrl = "categories";
+  let limit = limitCategory;
+
+  function handleCategorySuccess(data) {
+    // console.log("-----allCategoryItems JSON----");
+    allCategoryItems = [...data];
+    console.log(allCategoryItems);
+
+    if (currentURL.includes("/column/")) {
+      renderCategoryItems(allCategoryItems);
+    }
+  }
+
+  callApi(apiUrl, limit, handleCategorySuccess, handleError);
+}
+
+function renderCategoryItems(items) {
+  const getCategoryList = document.querySelector("#js-getCategoryList");
+  const getCategoryListUl = getCategoryList.querySelector(".c-linkList");
+  getCategoryListUl.innerHTML = "";
+
+  const listItemFirst = document.createElement("li");
+  const categoryLinkFirst = document.createElement("a");
+  categoryLinkFirst.className = `c-linkList__contents js-switchCategory`;
+  categoryLinkFirst.href = `?category=all`;
+  categoryLinkFirst.dataset.category = "all";
+  categoryLinkFirst.textContent = "すべて";
+  listItemFirst.appendChild(categoryLinkFirst);
+  getCategoryListUl.appendChild(listItemFirst);
+
+  items.forEach((categoryItem) => {
+    const categoryItemFields = categoryItem.fields;
+    const listItem = document.createElement("li");
+
+    const categoryLink = document.createElement("a");
+    categoryLink.className = `c-linkList__contents js-switchCategory`;
+    categoryLink.href = `?category=${categoryItemFields.id}`;
+    categoryLink.dataset.category = categoryItemFields.id;
+    categoryLink.textContent = categoryItemFields.name;
+
+    listItem.appendChild(categoryLink);
+    getCategoryListUl.appendChild(listItem);
+  });
+
+  // console.log(`category.id: ${categoryId}`);
+  const switchCategoryItems = document.querySelectorAll(".js-switchCategory");
+  switchCategoryItems.forEach((item) => {
+    const dataCategory = item.getAttribute("data-category");
+
+    if (
+      (categoryId === null || categoryId === "all") &&
+      dataCategory === "all"
+    ) {
+      item.classList.add("active");
+    } else if (dataCategory === categoryId) {
+      item.classList.add("active");
+    }
+  });
+}
+
 function getColumnList(limitColumn) {
   const apiUrl = "blogPage";
   let limit = limitColumn;
   let columnDataAll;
 
-  function handleSuccess(data) {
+  function handleColumnSuccess(data) {
     // console.log("-----columnDataAll JSON----");
     columnDataAll = [...data];
     console.log(columnDataAll);
+
+    getCategoryList();
+
     if (currentURL.includes("/column/")) {
       columnOfCategoryItems = columnDataAll.filter(function (item) {
         if (categoryId === null || categoryId === "all") {
@@ -296,14 +384,14 @@ function getColumnList(limitColumn) {
     }
   }
 
-  function handleError(error) {
+  function handleColumnError(error) {
     const getColumnList = document.querySelector("#js-getColumnList");
     getColumnList.innerHTML =
       '<p class="u-text-center">まだお知らせがありません。</p>';
     console.error("Error JSON:", error);
   }
 
-  callApi(apiUrl, limit, handleSuccess, handleError);
+  callApi(apiUrl, limit, handleColumnSuccess, handleColumnError);
 }
 
 function renderColumnItems(items) {
@@ -315,53 +403,70 @@ function renderColumnItems(items) {
 
   items.forEach((columnItem) => {
     const columnItemFields = columnItem.fields;
-    const listItem = document.createElement("li");
-    listItem.className = "c-columnList__item";
-    listItem.dataset.category = columnItemFields.category.id;
+    console.log("--- begin post ---");
+    const columnItemFieldsImageId = columnItemFields.eyecatch.sys.id;
+    // console.log(`Image ID: ${columnItemFieldsImageId}`);
+    const columnItemFieldsCategoryId = columnItemFields.category.sys.id;
+    console.log(`Category ID: ${columnItemFieldsCategoryId}`);
+    console.log("--- end post ---");
 
-    const linkCard = document.createElement("a");
-    linkCard.className = "c-card";
+    // allCategoryItems.forEach((categoryItem) => {
+    //   if (categoryItem.sys.id === columnItemFieldsCategoryId) {
+    //     console.log("123");
+    //   }
+    // });
 
-    let cardUrl = currentURL.includes("/column/")
-      ? `./post.html?id=${columnItemFields.id}`
-      : `./column/post.html?id=${columnItemFields.id}`;
-    linkCard.href = cardUrl;
+    function handleAssetSuccess() {
+      const listItem = document.createElement("li");
+      listItem.className = "c-columnList__item";
+      listItem.dataset.category = columnItemFields.category.id;
 
-    const cardInner = document.createElement("div");
-    cardInner.className = "c-card__inner";
+      const linkCard = document.createElement("a");
+      linkCard.className = "c-card";
 
-    const cardTextContents = document.createElement("div");
-    cardTextContents.className = "c-card__textContents";
+      let cardUrl = currentURL.includes("/column/")
+        ? `./post.html?id=${columnItemFields.id}`
+        : `./column/post.html?id=${columnItemFields.id}`;
+      linkCard.href = cardUrl;
 
-    const cardTitle = document.createElement("h3");
-    cardTitle.className = "c-card__title";
-    cardTitle.textContent = columnItemFields.title;
+      const cardInner = document.createElement("div");
+      cardInner.className = "c-card__inner";
 
-    const cardTagList = document.createElement("ul");
-    cardTagList.className = "c-card__tagList";
+      const cardTextContents = document.createElement("div");
+      cardTextContents.className = "c-card__textContents";
 
-    const cardTag = document.createElement("li");
-    cardTag.className = "c-card__tag";
-    cardTag.textContent = columnItemFields.category.name;
+      const cardTitle = document.createElement("h3");
+      cardTitle.className = "c-card__title";
+      cardTitle.textContent = columnItemFields.title;
 
-    const cardFigure = document.createElement("div");
-    cardFigure.className = "c-card__image";
+      const cardTagList = document.createElement("ul");
+      cardTagList.className = "c-card__tagList";
 
-    const cardImage = document.createElement("img");
-    cardImage.src = columnItemFields.eyecatch.url;
-    cardImage.alt = columnItemFields.title;
-    cardImage.width = columnItemFields.eyecatch.width;
-    cardImage.height = columnItemFields.eyecatch.height;
+      const cardTag = document.createElement("li");
+      cardTag.className = "c-card__tag";
+      cardTag.textContent = columnItemFields.category.name;
 
-    cardTextContents.appendChild(cardTitle);
-    cardTagList.appendChild(cardTag);
-    cardTextContents.appendChild(cardTagList);
-    cardInner.appendChild(cardTextContents);
-    cardFigure.appendChild(cardImage);
-    cardInner.appendChild(cardFigure);
-    linkCard.appendChild(cardInner);
-    listItem.appendChild(linkCard);
-    columnList.appendChild(listItem);
+      const cardFigure = document.createElement("div");
+      cardFigure.className = "c-card__image";
+
+      const cardImage = document.createElement("img");
+      cardImage.src = assetImage.url;
+      cardImage.width = assetImage.details.image.width;
+      cardImage.height = assetImage.details.image.height;
+      cardImage.alt = columnItemFields.title;
+
+      cardTextContents.appendChild(cardTitle);
+      cardTagList.appendChild(cardTag);
+      cardTextContents.appendChild(cardTagList);
+      cardInner.appendChild(cardTextContents);
+      cardFigure.appendChild(cardImage);
+      cardInner.appendChild(cardFigure);
+      linkCard.appendChild(cardInner);
+      listItem.appendChild(linkCard);
+      columnList.appendChild(listItem);
+    }
+
+    callApiAsset(columnItemFieldsImageId, handleAssetSuccess);
   });
 
   getColumnList.appendChild(columnList);
