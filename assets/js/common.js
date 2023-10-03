@@ -1,5 +1,5 @@
 let currentURL = window.location.href;
-console.log(currentURL);
+// console.log(currentURL);
 
 const apiKey = "kFbPZJQqDseWvnvwhMCeyLFztPqiB7CLgV9iknOuIl4";
 const spaceId = "blrbugsds7rq";
@@ -11,6 +11,8 @@ let currentPage = 1;
 let previousPage = 1;
 let totalPages = 1;
 let assetImage;
+let dataCategoryFields;
+let dataCategorySys;
 let allCategoryItems;
 
 function isElementInViewport(el) {
@@ -146,12 +148,36 @@ function callApiAsset(assetId, successAssetCallback) {
       Authorization: `Bearer ${apiKey}`,
     },
   })
-    .then((response) => response.json())
+    .then((assetResponse) => assetResponse.json())
     .then((dataAsset) => {
       // console.log(dataAsset);
       assetImage = dataAsset.fields.file;
       // console.log(assetImage);
       successAssetCallback(assetImage);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
+
+function callApiCategory(categoryId, successCategoryCallback) {
+  const apiUrl = `https://cdn.contentful.com/spaces/${spaceId}/entries/${categoryId}`;
+
+  // console.log(apiUrl);
+
+  fetch(apiUrl, {
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+    },
+  })
+    .then((categoryResponse) => categoryResponse.json())
+    .then((dataCategory) => {
+      // console.log(dataCategory);
+      dataCategoryFields = dataCategory.fields;
+      dataCategorySys = dataCategory.sys;
+      // console.log(dataCategoryFields);
+      // console.log(dataCategorySys);
+      successCategoryCallback();
     })
     .catch((error) => {
       console.error("Error:", error);
@@ -320,18 +346,21 @@ function renderCategoryItems(items) {
   categoryLinkFirst.className = `c-linkList__contents js-switchCategory`;
   categoryLinkFirst.href = `?category=all`;
   categoryLinkFirst.dataset.category = "all";
+  categoryLinkFirst.dataset.categoryId = "all";
   categoryLinkFirst.textContent = "すべて";
   listItemFirst.appendChild(categoryLinkFirst);
   getCategoryListUl.appendChild(listItemFirst);
 
   items.forEach((categoryItem) => {
     const categoryItemFields = categoryItem.fields;
+    const categoryItemSys = categoryItem.sys;
     const listItem = document.createElement("li");
 
     const categoryLink = document.createElement("a");
     categoryLink.className = `c-linkList__contents js-switchCategory`;
     categoryLink.href = `?category=${categoryItemFields.id}`;
     categoryLink.dataset.category = categoryItemFields.id;
+    categoryLink.dataset.categoryId = categoryItemSys.id;
     categoryLink.textContent = categoryItemFields.name;
 
     listItem.appendChild(categoryLink);
@@ -341,15 +370,24 @@ function renderCategoryItems(items) {
   // console.log(`category.id: ${categoryId}`);
   const switchCategoryItems = document.querySelectorAll(".js-switchCategory");
   switchCategoryItems.forEach((item) => {
-    const dataCategory = item.getAttribute("data-category");
+    const itemAttributeCategory = item.getAttribute("data-category");
 
     if (
       (categoryId === null || categoryId === "all") &&
-      dataCategory === "all"
+      itemAttributeCategory === "all"
     ) {
       item.classList.add("active");
-    } else if (dataCategory === categoryId) {
+    } else if (itemAttributeCategory === categoryId) {
       item.classList.add("active");
+      localStorage.removeItem("categorySysId");
+      const itemAttributeCategorySysId = item.getAttribute("data-category-id");
+
+      if (itemAttributeCategorySysId) {
+        localStorage.setItem("categorySysId", itemAttributeCategorySysId);
+        console.log(
+          `add Local Storage:  ${itemAttributeCategory} - ${itemAttributeCategorySysId}`
+        );
+      }
     }
   });
 }
@@ -364,21 +402,25 @@ function getColumnList(limitColumn) {
     columnDataAll = [...data];
     console.log(columnDataAll);
 
-    getCategoryList();
-
     if (currentURL.includes("/column/")) {
-      columnOfCategoryItems = columnDataAll.filter(function (item) {
-        if (categoryId === null || categoryId === "all") {
-          return true;
-        } else {
-          return item.category.id === categoryId;
-        }
-      });
+      getCategoryList();
+      setTimeout(function () {
+        const categorySysId = localStorage.getItem("categorySysId");
+        // console.log(`Storage value: ${categorySysId}`);
 
-      if (columnOfCategoryItems) {
-        totalPages = Math.ceil(columnOfCategoryItems.length / itemsPerPage);
-        renderPagination();
-      }
+        columnOfCategoryItems = columnDataAll.filter(function (item) {
+          if (categoryId === null || categoryId === "all") {
+            return true;
+          } else {
+            return item.fields.category.sys.id === categorySysId;
+            // console.log(item.fields.category.sys.id);
+          }
+        });
+        if (columnOfCategoryItems) {
+          totalPages = Math.ceil(columnOfCategoryItems.length / itemsPerPage);
+          renderPagination();
+        }
+      }, 100);
     } else {
       renderColumnItems(columnDataAll);
     }
@@ -403,69 +445,66 @@ function renderColumnItems(items) {
 
   items.forEach((columnItem) => {
     const columnItemFields = columnItem.fields;
-    console.log("--- begin post ---");
+    // console.log("--- begin post ---");
     const columnItemFieldsImageId = columnItemFields.eyecatch.sys.id;
     // console.log(`Image ID: ${columnItemFieldsImageId}`);
     const columnItemFieldsCategoryId = columnItemFields.category.sys.id;
-    console.log(`Category ID: ${columnItemFieldsCategoryId}`);
-    console.log("--- end post ---");
+    // console.log(`Category ID: ${columnItemFieldsCategoryId}`);
+    // console.log("--- end post ---");
 
-    // allCategoryItems.forEach((categoryItem) => {
-    //   if (categoryItem.sys.id === columnItemFieldsCategoryId) {
-    //     console.log("123");
-    //   }
-    // });
+    const listItem = document.createElement("li");
+    listItem.className = "c-columnList__item";
+
+    const linkCard = document.createElement("a");
+    linkCard.className = "c-card";
+    let cardUrl = currentURL.includes("/column/")
+      ? `./post.html?id=${columnItemFields.id}`
+      : `./column/post.html?id=${columnItemFields.id}`;
+    linkCard.href = cardUrl;
+
+    const cardInner = document.createElement("div");
+    cardInner.className = "c-card__inner";
+
+    const cardTextContents = document.createElement("div");
+    cardTextContents.className = "c-card__textContents";
+
+    const cardFigure = document.createElement("div");
+    cardFigure.className = "c-card__image";
+    const cardImage = document.createElement("img");
+
+    const cardTitle = document.createElement("h3");
+    cardTitle.className = "c-card__title";
+    cardTitle.textContent = columnItemFields.title;
+
+    const cardTagList = document.createElement("ul");
+    cardTagList.className = "c-card__tagList";
+    const cardTag = document.createElement("li");
+    cardTag.className = "c-card__tag";
 
     function handleAssetSuccess() {
-      const listItem = document.createElement("li");
-      listItem.className = "c-columnList__item";
-      listItem.dataset.category = columnItemFields.category.id;
-
-      const linkCard = document.createElement("a");
-      linkCard.className = "c-card";
-
-      let cardUrl = currentURL.includes("/column/")
-        ? `./post.html?id=${columnItemFields.id}`
-        : `./column/post.html?id=${columnItemFields.id}`;
-      linkCard.href = cardUrl;
-
-      const cardInner = document.createElement("div");
-      cardInner.className = "c-card__inner";
-
-      const cardTextContents = document.createElement("div");
-      cardTextContents.className = "c-card__textContents";
-
-      const cardTitle = document.createElement("h3");
-      cardTitle.className = "c-card__title";
-      cardTitle.textContent = columnItemFields.title;
-
-      const cardTagList = document.createElement("ul");
-      cardTagList.className = "c-card__tagList";
-
-      const cardTag = document.createElement("li");
-      cardTag.className = "c-card__tag";
-      cardTag.textContent = columnItemFields.category.name;
-
-      const cardFigure = document.createElement("div");
-      cardFigure.className = "c-card__image";
-
-      const cardImage = document.createElement("img");
       cardImage.src = assetImage.url;
       cardImage.width = assetImage.details.image.width;
       cardImage.height = assetImage.details.image.height;
       cardImage.alt = columnItemFields.title;
-
-      cardTextContents.appendChild(cardTitle);
-      cardTagList.appendChild(cardTag);
-      cardTextContents.appendChild(cardTagList);
-      cardInner.appendChild(cardTextContents);
-      cardFigure.appendChild(cardImage);
-      cardInner.appendChild(cardFigure);
-      linkCard.appendChild(cardInner);
-      listItem.appendChild(linkCard);
-      columnList.appendChild(listItem);
     }
 
+    function handleCategorySuccess() {
+      listItem.dataset.categoryId = dataCategorySys.id;
+      listItem.dataset.category = dataCategoryFields.id;
+      cardTag.textContent = dataCategoryFields.name;
+    }
+
+    cardTagList.appendChild(cardTag);
+    cardTextContents.appendChild(cardTitle);
+    cardTextContents.appendChild(cardTagList);
+    cardInner.appendChild(cardTextContents);
+    cardFigure.appendChild(cardImage);
+    cardInner.appendChild(cardFigure);
+    linkCard.appendChild(cardInner);
+    listItem.appendChild(linkCard);
+    columnList.appendChild(listItem);
+
+    callApiCategory(columnItemFieldsCategoryId, handleCategorySuccess);
     callApiAsset(columnItemFieldsImageId, handleAssetSuccess);
   });
 
@@ -532,7 +571,9 @@ function renderPagination() {
           let currentPageName = parseInt(button.textContent);
 
           if (previousPage !== currentPage) {
-            displayItemsOnPage(currentPage);
+            setTimeout(function () {
+              displayItemsOnPage(currentPage);
+            }, 100);
 
             paginationButtons.forEach((btn) => {
               btn.classList.remove("active");
@@ -565,13 +606,15 @@ function renderPagination() {
               }
             });
 
-            const columnSectionId = document.querySelector("#column");
+            setTimeout(function () {
+              const columnSectionId = document.querySelector("#column");
 
-            if (columnSectionId) {
-              columnSectionId.scrollIntoView({
-                behavior: "smooth",
-              });
-            }
+              if (columnSectionId) {
+                columnSectionId.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }, 200);
           }
         });
       });
