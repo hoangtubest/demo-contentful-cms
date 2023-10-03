@@ -1,5 +1,5 @@
 let postId = getParameterByName("id");
-// console.log(postId);
+console.log(postId);
 
 function getPost(limitPost) {
   const apiUrl = "blogPage";
@@ -11,10 +11,10 @@ function getPost(limitPost) {
     allPostItems = [...data];
     // console.log(allPostItems);
     let postItem = allPostItems.find(function (item) {
-      return item.id === postId;
+      return item.fields.id === postId;
     });
 
-    // console.log(postItem);
+    console.log(postItem);
 
     if (postItem) {
       renderPostItems(postItem);
@@ -26,6 +26,18 @@ function getPost(limitPost) {
 }
 
 function renderPostItems(postItem) {
+  const postItemFields = postItem.fields;
+  const postItemSys = postItem.sys;
+  const postFieldsCategoryId = postItemFields.category.id;
+  const postFieldsImageId = postItemFields.eyecatch.sys.id;
+  function handleCategorySuccess() {
+    console.log(123);
+  }
+  function handleAssetSuccess() {
+    console.log(211);
+  }
+  callApiCategory(postFieldsCategoryId, handleCategorySuccess);
+  callApiAsset(postFieldsImageId, handleAssetSuccess);
   const getPostCategory = document.querySelector("#js-postCategory");
   getPostCategory.innerHTML = "";
   const postCategoryList = document.createElement("ul");
@@ -33,8 +45,8 @@ function renderPostItems(postItem) {
   const postCategoryItem = document.createElement("li");
 
   const postCategoryLink = document.createElement("a");
-  postCategoryLink.href = `./?category=${postItem.category.id}`;
-  postCategoryLink.textContent = postItem.category.name;
+  // postCategoryLink.href = `./?category=${postItemFields.category.id}`;
+  // postCategoryLink.textContent = postItemFields.category.name;
 
   postCategoryItem.appendChild(postCategoryLink);
   postCategoryList.appendChild(postCategoryItem);
@@ -42,30 +54,32 @@ function renderPostItems(postItem) {
 
   const getPostTitle = document.querySelector("#js-postTitle");
   getPostTitle.innerHTML = "";
-  getPostTitle.textContent = postItem.title;
+  getPostTitle.textContent = postItemFields.title;
 
   const getPublishedDate = document.querySelector("#js-publishedDate");
   getPublishedDate.innerHTML = "";
-  getPublishedDate.textContent = formatDateToCustomFormat(postItem.publishedAt);
+  getPublishedDate.textContent = formatDateToCustomFormat(
+    postItemSys.createdAt
+  );
 
   const getUpdatedDate = document.querySelector("#js-updatedDate");
   getUpdatedDate.innerHTML = "";
-  getUpdatedDate.textContent = formatDateToCustomFormat(postItem.updatedAt);
+  getUpdatedDate.textContent = formatDateToCustomFormat(postItemSys.updatedAt);
 
   const getPostThumbnail = document.querySelector("#js-postThumbnail");
   getPostThumbnail.innerHTML = "";
   const postThumbnailImage = document.createElement("img");
-  postThumbnailImage.src = postItem.eyecatch.url;
-  postThumbnailImage.alt = postItem.title;
-  postThumbnailImage.width = postItem.eyecatch.width;
-  postThumbnailImage.height = postItem.eyecatch.height;
+  postThumbnailImage.src = postItemFields.eyecatch.url;
+  postThumbnailImage.alt = postItemFields.title;
+  postThumbnailImage.width = postItemFields.eyecatch.width;
+  postThumbnailImage.height = postItemFields.eyecatch.height;
 
   getPostThumbnail.appendChild(postThumbnailImage);
 
   const getPostContent = document.querySelector("#js-post");
   const getPostContentEditor = document.createElement("div");
   getPostContentEditor.className = "c-postEditor";
-  getPostContentEditor.innerHTML = postItem.content;
+  getPostContentEditor.innerHTML = postItemFields.content;
   getPostContent.appendChild(getPostContentEditor);
 }
 
