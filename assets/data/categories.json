@@ -1,31 +1,124 @@
 {
-  "contents": [
+  "sys": {
+    "type": "Array"
+  },
+  "total": 3,
+  "skip": 0,
+  "limit": 100,
+  "items": [
     {
-      "id": "technology",
-      "createdAt": "2023-09-27T09:21:53.401Z",
-      "updatedAt": "2023-09-29T06:44:24.335Z",
-      "publishedAt": "2023-09-27T09:21:53.401Z",
-      "revisedAt": "2023-09-27T09:21:53.401Z",
-      "name": "Technology"
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "2ifq4MLLZiEYglbctzLFfo",
+        "type": "Entry",
+        "createdAt": "2023-10-02T07:21:29.199Z",
+        "updatedAt": "2023-10-02T07:21:29.199Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "categories"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Tutorials",
+        "id": "tutorials"
+      }
     },
     {
-      "id": "information",
-      "createdAt": "2023-09-27T09:21:53.145Z",
-      "updatedAt": "2023-09-29T06:44:35.680Z",
-      "publishedAt": "2023-09-27T09:21:53.145Z",
-      "revisedAt": "2023-09-27T09:21:53.145Z",
-      "name": "Update Information"
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "2fDauQ9WfgY56xQ64TeFEF",
+        "type": "Entry",
+        "createdAt": "2023-10-02T07:21:12.610Z",
+        "updatedAt": "2023-10-02T07:21:12.610Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "categories"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Update Information",
+        "id": "information"
+      }
     },
     {
-      "id": "tutorials",
-      "createdAt": "2023-09-27T09:21:52.914Z",
-      "updatedAt": "2023-09-29T06:44:45.309Z",
-      "publishedAt": "2023-09-27T09:21:52.914Z",
-      "revisedAt": "2023-09-27T09:21:52.914Z",
-      "name": "Tutorials"
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "3FUIwVn5L2HBzi9ayLlcIZ",
+        "type": "Entry",
+        "createdAt": "2023-10-02T07:20:53.909Z",
+        "updatedAt": "2023-10-02T07:20:53.909Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "categories"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Technology",
+        "id": "technology"
+      }
     }
-  ],
-  "totalCount": 3,
-  "offset": 0,
-  "limit": 10
+  ]
 }

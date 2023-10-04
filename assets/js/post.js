@@ -14,7 +14,7 @@ function getPost(limitPost) {
       return item.fields.id === postId;
     });
 
-    console.log(postItem);
+    // console.log(postItem);
 
     if (postItem) {
       renderPostItems(postItem);
@@ -129,6 +129,23 @@ function renderPostItems(postItem) {
             contentElement = document.createElement("p");
             contentElement.textContent = item.content[0].value;
           }
+          break;
+      }
+    } else if (item.data) {
+      switch (itemNodeType) {
+        case "embedded-asset-block":
+          if (item.data.target.sys.id) {
+            const dataAssetDataTargetSysId = item.data.target.sys.id;
+            contentElement = document.createElement("img");
+            function handleAssetSuccess() {
+              contentElement.src = assetImage.url;
+              contentElement.width = assetImage.details.image.width;
+              contentElement.height = assetImage.details.image.height;
+            }
+            callApiAsset(dataAssetDataTargetSysId, handleAssetSuccess);
+          }
+          break;
+        default:
           break;
       }
     }

@@ -127,7 +127,7 @@ function callApi(contentType, limit = 100, successCallback, errorCallback) {
   })
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
+      console.log(data);
       // const responseData = JSON.parse(data.items);
       const responseData = data.items;
       successCallback(responseData);
@@ -326,7 +326,7 @@ function getCategoryList(limitCategory) {
   function handleCategorySuccess(data) {
     // console.log("-----allCategoryItems JSON----");
     allCategoryItems = [...data];
-    console.log(allCategoryItems);
+    // console.log(allCategoryItems);
 
     if (currentURL.includes("/column/")) {
       renderCategoryItems(allCategoryItems);
@@ -384,9 +384,9 @@ function renderCategoryItems(items) {
 
       if (itemAttributeCategorySysId) {
         localStorage.setItem("categorySysId", itemAttributeCategorySysId);
-        console.log(
-          `add Local Storage:  ${itemAttributeCategory} - ${itemAttributeCategorySysId}`
-        );
+        // console.log(
+        //   `add Local Storage:  ${itemAttributeCategory} - ${itemAttributeCategorySysId}`
+        // );
       }
     }
   });
@@ -400,7 +400,7 @@ function getColumnList(limitColumn) {
   function handleColumnSuccess(data) {
     // console.log("-----columnDataAll JSON----");
     columnDataAll = [...data];
-    console.log(columnDataAll);
+    // console.log(columnDataAll);
 
     if (currentURL.includes("/column/")) {
       getCategoryList();

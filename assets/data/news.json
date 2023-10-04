@@ -1,118 +1,344 @@
 {
-  "contents": [
+  "sys": {
+    "type": "Array"
+  },
+  "total": 8,
+  "skip": 0,
+  "limit": 100,
+  "items": [
     {
-      "id": "chgkmnza3ka",
-      "createdAt": "2023-09-26T09:59:44.633Z",
-      "updatedAt": "2023-09-26T13:01:08.292Z",
-      "publishedAt": "2023-09-26T09:59:44.633Z",
-      "revisedAt": "2023-09-26T13:01:08.292Z",
-      "news_id": "008",
-      "news_categories_01": false,
-      "news_categories_02": false,
-      "news_time": "2023-09-13T17:00:00.000Z",
-      "news_title": "link microcms.io",
-      "news_link": "https://ubyvb6y6u3.microcms.io/apis/news/create",
-      "news_link_target": true
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "7j8J5zEQYUjTrPj9VW7KcV",
+        "type": "Entry",
+        "createdAt": "2023-10-02T04:44:59.850Z",
+        "updatedAt": "2023-10-02T04:44:59.850Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "news"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "news_id": "008",
+        "news_time": "2023-09-26T00:00+07:00",
+        "news_title": "source code github",
+        "news_link": "https://github.com/hoangtubest/demo-contentful-cms",
+        "news_categories_01": true,
+        "news_categories_02": true,
+        "news_link_target": true
+      }
     },
     {
-      "id": "73z0fq_7gfj",
-      "createdAt": "2023-09-26T09:58:38.474Z",
-      "updatedAt": "2023-09-27T03:36:00.082Z",
-      "publishedAt": "2023-09-26T09:58:38.474Z",
-      "revisedAt": "2023-09-27T03:36:00.082Z",
-      "news_id": "007",
-      "news_categories_01": true,
-      "news_categories_02": true,
-      "news_time": "2023-09-28T17:00:00.000Z",
-      "news_title": "source code github",
-      "news_link": "https://github.com/hoangtubest/demo-micro-cms-01",
-      "news_link_target": true
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "1seB1hcNRhEDqqzMH8lG8C",
+        "type": "Entry",
+        "createdAt": "2023-10-02T04:44:20.207Z",
+        "updatedAt": "2023-10-02T04:44:20.207Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "news"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "news_id": "007",
+        "news_time": "2023-10-02T00:00+07:00",
+        "news_title": "link contentful",
+        "news_link": "https://app.contentful.com/spaces/blrbugsds7rq/home",
+        "news_link_target": true
+      }
     },
     {
-      "id": "ydaj9mucff87",
-      "createdAt": "2023-09-26T08:14:25.819Z",
-      "updatedAt": "2023-09-27T08:39:17.515Z",
-      "publishedAt": "2023-09-26T08:14:25.819Z",
-      "revisedAt": "2023-09-27T08:39:17.515Z",
-      "news_id": "006",
-      "news_categories_01": true,
-      "news_categories_02": false,
-      "news_time": "2023-09-27T17:00:00.000Z",
-      "news_title": "news title demo 06 - no link",
-      "news_link_target": false
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "7uog2ThuORkau07M3A1AWs",
+        "type": "Entry",
+        "createdAt": "2023-10-02T04:43:08.677Z",
+        "updatedAt": "2023-10-02T04:43:08.677Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "news"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "news_id": "006",
+        "news_time": "2023-09-22T00:00+07:00",
+        "news_title": "news title demo 06 - no link",
+        "news_categories_02": true
+      }
     },
     {
-      "id": "424oi6l6eam",
-      "createdAt": "2023-09-26T06:56:28.457Z",
-      "updatedAt": "2023-09-26T06:56:28.457Z",
-      "publishedAt": "2023-09-26T06:56:28.457Z",
-      "revisedAt": "2023-09-26T06:56:28.457Z",
-      "news_id": "005",
-      "news_categories_01": true,
-      "news_categories_02": true,
-      "news_time": "2023-09-26T17:00:00.000Z",
-      "news_title": "news title demo 05",
-      "news_link": "https://dummylink005.dummy",
-      "news_link_target": false
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "3ZnNAwfa9qn3Y6lucBNWKr",
+        "type": "Entry",
+        "createdAt": "2023-10-02T04:42:41.072Z",
+        "updatedAt": "2023-10-02T04:42:41.072Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "news"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "news_id": "005",
+        "news_time": "2023-09-27T00:00+07:00",
+        "news_title": "news title demo 05",
+        "news_link": "https://dummylink005.dummy",
+        "news_categories_01": true,
+        "news_categories_02": true
+      }
     },
     {
-      "id": "zf2wm8md8_d",
-      "createdAt": "2023-09-26T06:40:21.282Z",
-      "updatedAt": "2023-09-26T09:37:18.452Z",
-      "publishedAt": "2023-09-26T06:40:21.282Z",
-      "revisedAt": "2023-09-26T09:37:18.452Z",
-      "news_id": "004",
-      "news_categories_01": false,
-      "news_categories_02": false,
-      "news_time": "2023-09-25T17:00:00.000Z",
-      "news_title": "news title demo 04 - link _blank",
-      "news_link": "https://google.com",
-      "news_link_target": true
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "6Pnn7VW0lWMtTLKus04tWx",
+        "type": "Entry",
+        "createdAt": "2023-10-02T04:42:03.521Z",
+        "updatedAt": "2023-10-02T04:42:08.606Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "news"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "news_id": "004",
+        "news_time": "2023-09-30T00:00+07:00",
+        "news_title": "news title demo 04 - link _blank",
+        "news_link": "https://google.com",
+        "news_categories_01": false,
+        "news_categories_02": false,
+        "news_link_target": true
+      }
     },
     {
-      "id": "omxlmva7o",
-      "createdAt": "2023-09-26T06:39:44.069Z",
-      "updatedAt": "2023-09-26T06:55:38.075Z",
-      "publishedAt": "2023-09-26T06:39:44.069Z",
-      "revisedAt": "2023-09-26T06:55:38.075Z",
-      "news_id": "003",
-      "news_categories_01": false,
-      "news_categories_02": true,
-      "news_time": "2023-09-24T17:00:00.000Z",
-      "news_title": "news title demo 03",
-      "news_link": "https://dummylink003.dummy",
-      "news_link_target": false
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "3UmQeTcl54vpIhZnoMKc1h",
+        "type": "Entry",
+        "createdAt": "2023-10-02T04:41:29.096Z",
+        "updatedAt": "2023-10-02T04:41:29.096Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "news"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "news_id": "003",
+        "news_time": "2023-09-29T00:00+07:00",
+        "news_title": "news title demo 03",
+        "news_link": "https://dummylink003.dummy",
+        "news_categories_02": true
+      }
     },
     {
-      "id": "1vpkrf_4oz",
-      "createdAt": "2023-09-26T06:39:08.056Z",
-      "updatedAt": "2023-09-26T06:55:24.069Z",
-      "publishedAt": "2023-09-26T06:39:08.056Z",
-      "revisedAt": "2023-09-26T06:55:24.069Z",
-      "news_id": "002",
-      "news_categories_01": true,
-      "news_categories_02": false,
-      "news_time": "2023-09-23T17:00:00.000Z",
-      "news_title": "キャリア採用ページがオープンしました。",
-      "news_link": "https://dummylink002.dummy",
-      "news_link_target": false
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "6Y7uQV17cBYsU63eePQMIY",
+        "type": "Entry",
+        "createdAt": "2023-10-02T04:40:55.147Z",
+        "updatedAt": "2023-10-02T04:40:55.147Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "news"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "news_id": "002",
+        "news_time": "2023-09-21T00:00+07:00",
+        "news_title": "キャリア採用ページがオープンしました。",
+        "news_link": "https://dummylink002.dummy",
+        "news_categories_01": true,
+        "news_link_target": true
+      }
     },
     {
-      "id": "p15xjoi_e",
-      "createdAt": "2023-09-26T06:37:29.991Z",
-      "updatedAt": "2023-09-26T06:55:15.612Z",
-      "publishedAt": "2023-09-26T06:37:29.991Z",
-      "revisedAt": "2023-09-26T06:55:15.612Z",
-      "news_id": "001",
-      "news_categories_01": true,
-      "news_categories_02": true,
-      "news_time": "2023-09-22T17:00:00.000Z",
-      "news_title": "事業開始のお知らせ",
-      "news_link": "https://dummylink001.dummy",
-      "news_link_target": false
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "blrbugsds7rq"
+          }
+        },
+        "id": "2QnZCoYAcsQnjuGQNb1CM9",
+        "type": "Entry",
+        "createdAt": "2023-10-02T04:40:20.648Z",
+        "updatedAt": "2023-10-02T04:40:20.648Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "news"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "news_id": "001",
+        "news_time": "2023-09-13T00:00+07:00",
+        "news_title": "事業開始のお知らせ",
+        "news_link": "https://dummylink001.dummy",
+        "news_categories_01": true,
+        "news_categories_02": true
+      }
     }
-  ],
-  "totalCount": 8,
-  "offset": 0,
-  "limit": 10
+  ]
 }
