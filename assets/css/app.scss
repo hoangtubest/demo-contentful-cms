@@ -1,11 +1,14 @@
 // var
 $transition: 0.3s cubic-bezier(0.66, 0, 0.34, 1);
+$shadow: rgba(0, 0, 0, 0.25) 0px 5px 20px 5px;
 
 :root {
-  --color-base: #555;
-  --color-light: #f8f9fd;
-  --color-purple-light: #e9e7fd;
-  --color-white: rgb(255, 255, 255);
+  --color-text: #444;
+  --color-light: rgba(64, 87, 109, .07);
+  --color-link: #B4F8C8;
+  --color-link: rgba(139, 61, 255, 0.1);
+  --color-bg: rgb(255, 255, 255);
+  --color-border: rgba(64, 87, 109, .07);
 }
 
 
@@ -39,8 +42,8 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.75;
-  color: var(--color-base);
-  background: var(--color-white);
+  color: var(--color-text);
+  background: var(--color-bg);
   font-family: sans-serif;
 
   &.is-fixed {
@@ -64,7 +67,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-white);
+  background: var(--color-bg);
   opacity: 1;
   visibility: visible;
   transition: 0s;
@@ -211,7 +214,7 @@ body {
 }
 
 .header {
-  // background: var(--color-purple-light);
+  // background: var(--color-link);
 
   &__inner {
     display: flex;
@@ -228,7 +231,7 @@ body {
 
     li+li {
       margin-left: 1.5rem;
-      border-left: 1px solid var(--color-base);
+      border-left: 1px solid var(--color-text);
       padding-left: 1.5rem;
     }
 
@@ -238,7 +241,7 @@ body {
       border-bottom: 1px solid transparent;
 
       &:hover {
-        border-bottom-color: var(--color-base);
+        border-bottom-color: var(--color-text);
       }
     }
   }
@@ -246,7 +249,7 @@ body {
 
 .footer {
   text-align: center;
-  background: var(--color-purple-light);
+  background: var(--color-light);
   padding: 2rem 0;
 }
 
@@ -294,19 +297,19 @@ body {
 
     &:hover,
     &.active {
-      background: var(--color-base);
-      color: var(--color-white);
+      background: var(--color-text);
+      color: var(--color-bg);
     }
   }
 }
 
 .c-newsList {
-  border-bottom: 1px solid var(--color-purple-light);
+  border-bottom: 1px solid var(--color-border);
   max-width: 70rem;
   margin: 0 auto;
 
   &__item {
-    border-top: 1px solid var(--color-purple-light);
+    border-top: 1px solid var(--color-border);
     padding: 2rem 0;
   }
 
@@ -335,12 +338,12 @@ body {
     padding-left: 0.5rem;
 
     li {
-      color: var(--color-white);
+      color: var(--color-bg);
       font-size: 1.2rem;
       line-height: 1.75;
       display: inline-block;
       padding: 0 1rem;
-      background: var(--color-base);
+      background: var(--color-text);
       border-radius: 2rem;
       margin-left: 0.5rem;
     }
@@ -350,7 +353,7 @@ body {
     position: relative;
 
     &:hover {
-      background: var(--color-purple-light);
+      background: var(--color-link);
     }
 
     &::after {
@@ -399,12 +402,12 @@ body {
   align-items: center;
 
   &__link {
-    border: 3px solid var(--color-base);
-    box-shadow: 0 0 10px 2px rgba(#333, 0.2);
+    border: 1px solid var(--color-border);
+    box-shadow: rgba(0, 0, 0, 0) 0px 5px 20px 5px;
     font-size: 120%;
     font-weight: bold;
     display: block;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 0.8rem;
     width: 30rem;
     text-align: center;
     border-radius: 0.6rem;
@@ -424,12 +427,9 @@ body {
     }
 
     &:hover {
-      background: var(--color-base);
-      color: var(--color-white);
-
-      &::after {
-        background-image: url("../images/common/icon_arrow_right_white.svg");
-      }
+      background: var(--color-link);
+      color: var(--color-text);
+      border-color: transparent;
     }
   }
 }
@@ -460,10 +460,10 @@ body {
 .c-card {
   display: block;
   height: 100%;
-  background: var(--color-light);
+  border: 1px solid var(--color-border);
   border-radius: 0.6rem;
   overflow: hidden;
-  box-shadow: 0 0 10px 2px rgba(#333, 0);
+  box-shadow: rgba(0, 0, 0, 0) 0px 5px 20px 5px;
 
   &__inner {
     display: flex;
@@ -486,8 +486,7 @@ body {
 
   &__tag {
     margin-top: 0.5rem;
-    background: var(--color-base);
-    color: var(--color-white);
+    background: var(--color-light);
     padding: 0.4rem 1.5rem;
     font-size: 80%;
     border-radius: 0.4rem;
@@ -496,6 +495,7 @@ body {
   &__image {
     overflow: hidden;
     filter: brightness(0.9);
+    filter: brightness(1.1);
   }
 
   img {
@@ -504,7 +504,8 @@ body {
 
   &:hover {
     opacity: 1;
-    box-shadow: 0 0 10px 2px rgba(#333, 0.2);
+    background: var(--color-link);
+    // box-shadow: $shadow;
 
     img {
       transform: scale(1.05);
@@ -599,7 +600,7 @@ body {
     font-size: 105%;
     padding: 1.6rem calc(0.8rem + 2.4rem + 0.4rem) 1.6rem 1.6rem;
     background-color: transparent;
-    border: 1px solid var(--color-base);
+    border: 1px solid var(--color-border);
     border-radius: 0.5rem;
     position: relative;
     cursor: pointer;
@@ -623,8 +624,8 @@ body {
 
     &.active,
     &:hover {
-      background: var(--color-base);
-      color: var(--color-white);
+      background: var(--color-text);
+      color: var(--color-bg);
 
       &::after {
         transform: translate(0.4rem, -50%);
@@ -647,8 +648,8 @@ body {
       margin-top: 2.5em;
       margin-bottom: 1.5em;
       padding: 0 0.6em 0.1em 0.6em;
-      border-left: 0.8rem solid var(--color-base);
-      border-bottom: 1px solid var(--color-base);
+      border-left: 0.8rem solid var(--color-text);
+      border-bottom: 1px solid var(--color-text);
     }
 
     h3 {
@@ -657,7 +658,7 @@ body {
       margin-top: 1.6em;
       margin-bottom: 1.2em;
       padding: 0 0 0.2em;
-      border-bottom: 1px solid var(--color-base);
+      border-bottom: 1px solid var(--color-text);
     }
 
     figure {
@@ -685,16 +686,16 @@ body {
 
     a {
       padding: 1rem 1.5rem 1rem;
-      color: var(--color-white);
-      background-color: var(--color-base);
+      color: var(--color-bg);
+      background-color: var(--color-text);
       display: block;
       border-radius: 3rem;
       line-height: 1;
-      border: 1px solid var(--color-base);
+      border: 1px solid var(--color-text);
 
       &:hover {
-        color: var(--color-base);
-        background: var(--color-white);
+        color: var(--color-text);
+        background: var(--color-bg);
       }
     }
   }
@@ -742,7 +743,8 @@ body {
 
 .c-childPageTitle {
   margin-top: -4rem;
-  background: var(--color-purple-light);
+  background: var(--color-light);
+  color: var(--color-text);
   padding: 4rem;
   display: flex;
   justify-content: center;
@@ -762,13 +764,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--color-base);
-    color: var(--color-base);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    background: transparent;
     border-radius: 0.5rem;
     font-size: 90%;
     cursor: pointer;
     transition: $transition;
-    background: var(--color-white);
     margin: 4rem 0.75rem;
 
     &--prev,
@@ -778,10 +780,18 @@ body {
 
     &:hover,
     &.active {
-      background: var(--color-base);
-      color: var(--color-white);
+      background: var(--color-text);
+      color: var(--color-bg);
     }
   }
+}
+
+pre {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--color-text);
+  color: var(--color-bg);
+  padding: 1rem;
 }
 
 
@@ -935,7 +945,7 @@ body {
 
   .c-sidebar {
     margin-top: 3rem;
-    border-top: 5px solid var(--color-base);
+    border-top: 5px solid var(--color-text);
     padding-top: 3rem;
 
     &__title {
@@ -1205,7 +1215,7 @@ body {
 
   .c-sidebar {
     margin-top: 3rem;
-    border-top: 5px solid var(--color-base);
+    border-top: 5px solid var(--color-text);
     padding-top: 3rem;
 
     &__title {
