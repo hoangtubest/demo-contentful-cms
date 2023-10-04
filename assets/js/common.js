@@ -27,7 +27,7 @@ function isElementInViewport(el) {
   );
 }
 
-function Effect() {
+function applyScrollEffects() {
   function handleScroll() {
     const elements = document.querySelectorAll(".js-effect");
 
@@ -44,55 +44,75 @@ function Effect() {
   window.addEventListener("scroll", handleScroll);
 }
 
-function onReady(callback) {
-  const loading = document.querySelector("#loading");
-  let promises = [];
+function onLoad(callback) {
+  const loadingElement = document.querySelector("#loading");
+  let imagePromises = [];
 
-  function onResourceLoad() {
-    loading.classList.add("loaded");
-    Promise.all(promises).then(callback);
+  // if (loadingElement) {
+  //   const images = document.querySelectorAll("img");
+  //   for (let i = 0; i < images.length; i++) {
+  //     let promise = new Promise(function (resolve, reject) {
+  //       const image = images[i];
+  //       if (image.complete) {
+  //         resolve();
+  //       } else {
+  //         image.addEventListener("load", resolve);
+  //         image.addEventListener("error", reject);
+  //       }
+  //     });
+  //     imagePromises.push(promise);
+  //   }
+  // }
+
+  function onImageLoad(image) {
+    return new Promise(function (resolve, reject) {
+      if (image.complete) {
+        resolve();
+      } else {
+        image.addEventListener("load", resolve);
+        image.addEventListener("error", reject);
+      }
+    });
   }
 
-  if (loading) {
+  if (loadingElement) {
     const images = document.querySelectorAll("img");
-    for (let i = 0; i < images.length; i++) {
-      let promise = new Promise(function (resolve, reject) {
-        const image = images[i];
-        if (image.complete) {
-          resolve();
-        } else {
-          image.addEventListener("load", resolve);
-          image.addEventListener("error", reject);
-        }
-      });
-      promises.push(promise);
+    images.forEach(function (image) {
+      imagePromises.push(onImageLoad(image));
+    });
+  }
+
+  function onAllImagesLoaded() {
+    if (loadingElement) {
+      loadingElement.classList.add("loaded");
     }
+    Promise.all(imagePromises).then(callback);
   }
 
   if (document.readyState === "complete") {
-    onResourceLoad();
+    onAllImagesLoaded();
   } else {
-    window.addEventListener("load", onResourceLoad);
+    window.addEventListener("load", onAllImagesLoaded);
   }
 }
 
-function setVisible(selector) {
+function hideLoadingScreen(selector) {
   const element = document.querySelector(selector);
   element.classList.add("loadHidden");
   setTimeout(function () {
-    Effect();
+    applyScrollEffects();
     document.body.classList.remove("is-fixed");
   }, 300);
 }
 
 if (document.getElementById("loading")) {
   document.body.classList.add("is-fixed");
-  onReady(function () {
-    setVisible("#loading");
+  onLoad(function () {
+    hideLoadingScreen("#loading");
   });
 } else {
   setTimeout(function () {
-    Effect();
+    applyScrollEffects();
   }, 300);
 }
 
@@ -127,7 +147,7 @@ function callApi(contentType, limit = 100, successCallback, errorCallback) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       // const responseData = JSON.parse(data.items);
       const responseData = data.items;
       successCallback(responseData);
